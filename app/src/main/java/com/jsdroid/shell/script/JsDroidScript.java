@@ -186,22 +186,22 @@ public abstract class JsDroidScript extends Script {
      * @param y
      * @return
      */
-    int getColor(int x, int y) {
+    public int getColor(int x, int y) {
         if (screen != null) {
             return screen.getPixel(x, y);
         }
         return BitmapUtil.takeScreenshot().getPixel(x, y);
     }
 
-    int red(int color) {
+    public int red(int color) {
         return Color.red(color);
     }
 
-    int green(int color) {
+    public int green(int color) {
         return Color.green(color);
     }
 
-    int blue(int color) {
+    public int blue(int color) {
         return Color.blue(color);
     }
 
